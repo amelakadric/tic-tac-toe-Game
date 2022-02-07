@@ -57,6 +57,16 @@
   color: rgb(94, 4, 168);
 }
 
+.error label {
+  color: rgb(136, 2, 2);
+}
+
+.error input {
+  border-color: rgb(136, 2, 2);
+  color: rgb(136, 2, 2);
+  background-color: rgb(253, 219, 219);
+}
+
 .player-simbol {
   font-size: 2rem;
   font-weight: bold;

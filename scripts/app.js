@@ -1,5 +1,20 @@
+let editedPlayer = 0;
+
+const players = [
+  {
+    name: "",
+    symbol: "X",
+  },
+  {
+    name: "",
+    symbol: "O",
+  },
+];
+
 const playerConfigOverlayElement = document.getElementById("config-overlay");
 const backDropElement = document.getElementById("backdrop");
+const formElement = document.querySelector("form");
+const errorsOutputElement = document.getElementById("config-errors");
 
 const editPlayer1ButtonElement = document.getElementById("edit-player1-btn");
 const editPlayer2ButtonElement = document.getElementById("edit-player2-btn");
@@ -10,3 +25,5 @@ editPlayer2ButtonElement.addEventListener("click", openPlayerConfig);
 
 cancelConfigButtonElement.addEventListener("click", closePlayerConfig);
 backDropElement.addEventListener("click", closePlayerConfig);
+
+formElement.addEventListener("submit", savePlayerConfig);
